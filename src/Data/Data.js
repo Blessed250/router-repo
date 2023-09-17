@@ -3,7 +3,7 @@ export const FilmData = [
         id : 1 ,
         title : "The joker" ,
         description : "The film that follows Arthur Fleck, a failed clown and stand-up comedian whose descent into insanity and nihilism inspires a violent counter-cultural revolution against the wealthy in a decaying Gotham City." ,
-        rate : 5 , 
+        rate : 2 , 
         posterUrl : "https://th.bing.com/th/id/OIP.a7iYCYivFPRKNQi8qHrGmQHaE8?pid=ImgDet&rs=1"
     } ,
     {
