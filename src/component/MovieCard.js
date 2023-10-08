@@ -1,16 +1,22 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
-import { Rate } from 'antd';
-const MovieCard = ({movie}) => {
+import { Link} from 'react-router-dom'
+
+
+const MovieCard = ({move}) => {
+
+  
+  
   return (
     <div>
-       <Card style={{ width: '18rem' }}>
-       <Card.Img className='image' variant="top" src={movie.posterUrl}/>
+ <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={move.posterUrl} />
       <Card.Body>
-        <Card.Title>{movie.title}</Card.Title>
-        <Card.Text>{movie.description}</Card.Text>
-        <Rate disabled defaultValue={movie.rate} />
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title>{move.title}</Card.Title>
+        <Card.Text>
+          {move.description}
+        </Card.Text>
+       <Link to={`description/${move.title}`}><Button>Watch trailer</Button></Link>
       </Card.Body>
     </Card>
     </div>
